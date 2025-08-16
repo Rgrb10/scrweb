@@ -311,30 +311,30 @@
 
 <script>
 /* CONFIG */
-const BASE_IMAGE_SRC = 'https://peegg-tau.vercel.app/pfp/peegpfp.png'; // make sure file is in repo root
+const BASE_IMAGE_SRC = 'https://scrweb.vercel.app/pfp/peegpfp.png'; // make sure file is in repo root
 
 /* STICKERS - Updated to match your 20 sticker files */
 const STICKERS = [
-  { id: 'sticker1', name: 'Sticker 1', src: 'https://peegg-tau.vercel.app/pfp/assets/sticker1.PNG' },
-  { id: 'sticker2', name: 'Sticker 2', src: 'https://peegg-tau.vercel.app/pfp/assets/sticker2.PNG' },
-  { id: 'sticker3', name: 'Sticker 3', src: 'https://peegg-tau.vercel.app/pfp/assets/sticker3.PNG' },
-  { id: 'sticker4', name: 'Sticker 4', src: 'https://peegg-tau.vercel.app/pfp/assets/sticker4.PNG' },
-  { id: 'sticker5', name: 'Sticker 5', src: 'https://peegg-tau.vercel.app/pfp/assets/sticker5.PNG' },
-  { id: 'sticker6', name: 'Sticker 6', src: 'https://peegg-tau.vercel.app/pfp/assets/sticker6.PNG' },
-  { id: 'sticker7', name: 'Sticker 7', src: 'https://peegg-tau.vercel.app/pfp/assets/sticker7.PNG' },
-  { id: 'sticker8', name: 'Sticker 8', src: 'https://peegg-tau.vercel.app/pfp/assets/sticker8.PNG' },
-  { id: 'sticker9', name: 'Sticker 9', src: 'https://peegg-tau.vercel.app/pfp/assets/sticker9.PNG' },
-  { id: 'sticker10', name: 'Sticker 10', src: 'https://peegg-tau.vercel.app/pfp/assets/sticker10.PNG' },
-  { id: 'sticker11', name: 'Sticker 11', src: 'https://peegg-tau.vercel.app/pfp/assets/sticker11.PNG' },
-  { id: 'sticker12', name: 'Sticker 12', src: 'https://peegg-tau.vercel.app/pfp/assets/sticker12.PNG' },
-  { id: 'sticker13', name: 'Sticker 13', src: 'https://peegg-tau.vercel.app/pfp/assets/sticker13.PNG' },
-  { id: 'sticker14', name: 'Sticker 14', src: 'https://peegg-tau.vercel.app/pfp/assets/sticker14.PNG' },
-  { id: 'sticker15', name: 'Sticker 15', src: 'https://peegg-tau.vercel.app/pfp/assets/sticker15.PNG' },
-  { id: 'sticker16', name: 'Sticker 16', src: 'https://peegg-tau.vercel.app/pfp/assets/sticker16.PNG' },
-  { id: 'sticker17', name: 'Sticker 17', src: 'https://peegg-tau.vercel.app/pfp/assets/sticker17.PNG' },
-  { id: 'sticker18', name: 'Sticker 18', src: 'https://peegg-tau.vercel.app/pfp/assets/sticker18.PNG' },
-  { id: 'sticker19', name: 'Sticker 19', src: 'https://peegg-tau.vercel.app/pfp/assets/sticker19.PNG' },
-  { id: 'sticker20', name: 'Sticker 20', src: 'https://peegg-tau.vercel.app/pfp/assets/sticker20.PNG' }
+  { id: 'sticker1', name: 'Sticker 1', src: 'https://scrweb.vercel.app/pfp/assets/sticker1.PNG' },
+  { id: 'sticker2', name: 'Sticker 2', src: 'https://scrweb.vercel.app/pfp/assets/sticker2.PNG' },
+  { id: 'sticker3', name: 'Sticker 3', src: 'https://scrweb.vercel.app/pfp/assets/sticker3.PNG' },
+  { id: 'sticker4', name: 'Sticker 4', src: 'https://scrweb.vercel.app/pfp/assets/sticker4.PNG' },
+  { id: 'sticker5', name: 'Sticker 5', src: 'https://scrweb.vercel.app/pfp/assets/sticker5.PNG' },
+  { id: 'sticker6', name: 'Sticker 6', src: 'https://scrweb.vercel.app/pfp/assets/sticker6.PNG' },
+  { id: 'sticker7', name: 'Sticker 7', src: 'https://scrweb.vercel.app/pfp/assets/sticker7.PNG' },
+  { id: 'sticker8', name: 'Sticker 8', src: 'https://scrweb.vercel.app/pfp/assets/sticker8.PNG' },
+  { id: 'sticker9', name: 'Sticker 9', src: 'https://scrweb.vercel.app/pfp/assets/sticker9.PNG' },
+  { id: 'sticker10', name: 'Sticker 10', src: 'https://scrweb.vercel.app/pfp/assets/sticker10.PNG' },
+  { id: 'sticker11', name: 'Sticker 11', src: 'https://scrweb.vercel.app/pfp/assets/sticker11.PNG' },
+  { id: 'sticker12', name: 'Sticker 12', src: 'https://scrweb.vercel.app/pfp/assets/sticker12.PNG' },
+  { id: 'sticker13', name: 'Sticker 13', src: 'https://scrweb.vercel.app/pfp/assets/sticker13.PNG' },
+  { id: 'sticker14', name: 'Sticker 14', src: 'https://scrweb.vercel.app/pfp/assets/sticker14.PNG' },
+  { id: 'sticker15', name: 'Sticker 15', src: 'https://scrweb.vercel.app/pfp/assets/sticker15.PNG' },
+  { id: 'sticker16', name: 'Sticker 16', src: 'https://scrweb.vercel.app/pfp/assets/sticker16.PNG' },
+  { id: 'sticker17', name: 'Sticker 17', src: 'https://scrweb.vercel.app/pfp/assets/sticker17.PNG' },
+  { id: 'sticker18', name: 'Sticker 18', src: 'https://scrweb.vercel.app/pfp/assets/sticker18.PNG' },
+  { id: 'sticker19', name: 'Sticker 19', src: 'https://scrweb.vercel.app/pfp/assets/sticker19.PNG' },
+  { id: 'sticker20', name: 'Sticker 20', src: 'https://scrweb.vercel.app/pfp/assets/sticker20.PNG' }
 ];
 
 /* REFERENCES */
